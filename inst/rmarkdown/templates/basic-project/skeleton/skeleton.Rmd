@@ -1,0 +1,38 @@
+---
+title: "Basic Project"
+author: "Author"
+date: "`r Sys.Date()`"
+description: "This is a basic project template"
+output:
+#  pdf_document:
+#    latex_engine: xelatex
+#    extra_dependencies: ["geometry", "multicol", "multirow"]
+  prettydoc::html_pretty:
+    theme: architect
+    highlight: github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(knitr)
+```
+
+## Assignment
+
+## Data Prep
+```{r prep, message=FALSE, warning=FALSE}
+#df <- read_csv('data/file.csv')
+```
+
+```{r output, echo=FALSE}
+#head(df)
+```
+
+```{r graphs, echo=FALSE, fig.height=3, fig.show='hold', out.width='50%'}
+#ggplot()
+```
+
+---
+
+## Analysis & Discussion
